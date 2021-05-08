@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" class="h-full">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -13,16 +13,30 @@
     <title>eMall Design</title>
 </head>
 
-<body class="min-h-full flex flex-col text-gray-900">
-    <aside id="aside" class="hidden md:block fixed inset-y-0 -start-64 lg:start-0 w-64 h-full bg-gray-50 border-e border-gray-200 z-50 transition">
-        <h1 class="flex items-center text-xl text-brand font-bold h-20 px-2">
-            <a href="#" class="line-clamp-1">ایمول</a>
-        </h1>
+<body class="min-h-screen flex flex-col text-gray-900">
+    <aside id="aside" class="hidden lg:block fixed inset-y-0 -start-64 lg:start-0 w-64 h-screen bg-gray-50 border-e border-gray-200 z-50 transition ease-in-out">
+        <div class="flex justify-between items-center h-20 px-2">
+            <h1 class="text-xl text-brand font-bold line-clamp-1">
+                <a href="/" class="block">ایمول</a>
+            </h1>
+
+            <button id="aside-close" class="flex lg:hidden justify-center items-center w-10 h-10 bg-gray-100 focus:outline-none focus:bg-gray-200 hover:bg-gray-200 rounded transition" aria-label="Close side nav">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
+        </div>
     </aside>
 
     <main id="main" class="flex-1 lg:ms-64">
         <header id="header" class="flex justify-between items-center h-20 px-4">
-            <div></div>
+            <div>
+                <button class="flex lg:hidden justify-center items-center w-12 h-12 border border-gray-200 rounded transition" aria-label="Open side nav">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
 
             <div class="flex">
                 <a href="#" class="flex justify-center items-center w-12 h-12 border border-gray-200 rounded transition me-2" aria-label="Notifications">
@@ -40,7 +54,11 @@
                 </a>
             </div>
         </header>
+
+        <div class="p-4"></div>
     </main>
+
+    <script src="vendors/alpine-2.8.2/alpine.js"></script>
 </body>
 
 </html>
