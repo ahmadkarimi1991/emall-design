@@ -90,41 +90,45 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
                     <div>
                         <label for="name" class="block mb-2 text-sm text-gray-700 font-bold cursor-default">الإدخال الافتراضي للنص</label>
-                        <input type="text" name="name" id="name" class="border border-gray-400 h-10 rounded px-4 w-full text-sm focus:border-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-1">
+                        <input type="text" name="name" id="name" class="w-full h-10 px-4 border border-gray-400 focus:border-gray-400 rounded text-sm focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-brand transition">
                     </div>
+
                     <div>
                         <label for="name2" class="block mb-2 text-sm text-gray-700 font-bold cursor-default">إدخال النص الافتراضي + عنصر نائب</label>
-                        <input type="text" name="name" id="name2" placeholder="إدخال النص" class="border border-gray-400 h-10 rounded px-4 w-full text-sm placeholder-gray-300 focus:border-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-1">
+                        <input type="text" name="name" id="name2" placeholder="إدخال النص" class="w-full h-10 px-4 border border-gray-400 focus:border-gray-400 rounded text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-brand transition">
                     </div>
+
                     <div>
                         <label for="name3" class="block mb-2 text-sm text-gray-700 font-bold cursor-default">إدخال النص الافتراضي + المساعدة </label>
-                        <input type="text" name="name" id="name3" class="border border-gray-400 h-10 rounded px-4 w-full text-sm focus:border-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-1">
+                        <input type="text" name="name" id="name3" class="w-full h-10 px-4 rounded text-sm border border-gray-400 focus:border-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-brand transition">
                         <div class="flex items-center text-xs text-gray-400 mt-2 cursor-default">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 me-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
-                            <span>نص المساعدة</span>
+                            <span class="leading-relaxed">نص المساعدة</span>
                         </div>
                     </div>
+
                     <div>
                         <label for="name4" class="block mb-2 text-sm text-gray-700 font-bold cursor-default">إدخال الرقم</label>
-                        <input type="text" name="name" id="name4" class="border border-gray-400 h-10 rounded px-4 w-full text-sm text-left dir-ltr focus:border-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-1">
+                        <input type="text" name="name" id="name4" class="w-full h-10 px-4 rounded text-sm text-left ltr border border-gray-400 focus:border-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-brand transition">
                     </div>
                 </div>
 
                 <div class="grid gird-cols-1 lg:grid-cols-2 gap-4 mt-4">
                     <div>
                         <label for="textarea1" class="block mb-2 text-sm text-gray-700 font-bold">إدخال نص طويل</label>
-                        <textarea id="textarea1" name="" class="resize-none border border-gray-400 h-24 rounded px-4 py-2 w-full text-sm focus:border-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-1"></textarea>
+                        <textarea id="textarea1" name="" class="w-full h-24 py-2 px-4 resize-none rounded text-sm border border-gray-400 focus:border-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-brand transition"></textarea>
                     </div>
+
                     <div>
                         <label for="textarea2" class="block mb-2 text-sm text-gray-700 font-bold">إدخال نص طويل + المساعدة</label>
-                        <textarea id="textarea2" name="" placeholder="إدخال نص طويل" class="resize-none border border-gray-400 placeholder-gray-300 h-24 rounded px-4 py-2 w-full text-sm focus:border-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-1"></textarea>
+                        <textarea id="textarea2" name="" placeholder="إدخال نص طويل" class="w-full h-24 py-2 px-4 resize-none placeholder-gray-400 rounded text-sm border border-gray-400 focus:border-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-brand transition"></textarea>
                         <div class="flex items-center text-xs text-gray-400 cursor-default">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 me-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
-                            <span>نص المساعدة</span>
+                            <span class="leading-relaxed">نص المساعدة</span>
                         </div>
                     </div>
                 </div>
@@ -140,26 +144,26 @@
                         <h3 class="block mb-4 text-gray-700 font-bold cursor-default">عنوان دکمه‌ چک‌باکس</h3>
                         <div>
                             <label class="inline-flex items-center group">
-                              <input type="checkbox" class="w-4 h-4 border border-gray-600 rounded-sm focus:ring-1 focus:ring-offset-1">
-                              <span class="text-sm text-gray-600 mr-2 group-hover:text-blue-600 transition">گزینه اول</span>
+                              <input type="checkbox" class="text-brand w-4 h-4 border border-gray-600 rounded-sm focus:ring-1 focus:ring-offset-1">
+                              <span class="text-sm text-gray-600 ms-2 group-hover:text-blue-600 transition">گزینه اول</span>
                             </label>
                         </div>
                         <div class="mt-2">
                             <label class="inline-flex items-center group">
                               <input type="checkbox" class="w-4 h-4 border border-gray-600 rounded-sm focus:ring-1 focus:ring-offset-1" checked>
-                              <span class="text-sm text-gray-600 mr-2 group-hover:text-blue-600 transition">گزینه دوم</span>
+                              <span class="text-sm text-gray-600 ms-2 group-hover:text-blue-600 transition">گزینه دوم</span>
                             </label>
                         </div>
                         <div class="mt-2">
                             <label class="inline-flex items-center group">
                               <input type="checkbox" class="w-4 h-4 border border-gray-600 rounded-sm focus:ring-1 focus:ring-offset-1">
-                              <span class="text-sm text-gray-600 mr-2 group-hover:text-blue-600 transition">گزینه سوم</span>
+                              <span class="text-sm text-gray-600 ms-2 group-hover:text-blue-600 transition">گزینه سوم</span>
                             </label>
                         </div>
                         <div class="mt-2">
                             <label class="inline-flex items-center group opacity-50">
                               <input type="checkbox" class="w-4 h-4 border border-gray-600 rounded-sm focus:ring-1 focus:ring-offset-1" disabled>
-                              <span class="text-sm text-gray-600 mr-2">گزینه چهارم</span>
+                              <span class="text-sm text-gray-600 ms-2">گزینه چهارم</span>
                             </label>
                         </div>
                     </div>
@@ -168,25 +172,25 @@
                         <div>
                             <label class="inline-flex items-center group">
                               <input checked type="radio" id="1" name="a" value="1" class="w-3.5 h-3.5 border border-gray-600 focus:ring-1 focus:ring-offset-1">
-                              <span class="text-sm text-gray-600 mr-2 group-hover:text-blue-600">گزینه اول</span>
+                              <span class="text-sm text-gray-600 ms-2 group-hover:text-blue-600">گزینه اول</span>
                             </label>
                         </div>
                         <div class="mt-2">
                             <label class="inline-flex items-center group">
                               <input type="radio" id="2" name="a" value="2" class="w-3.5 h-3.5 border border-gray-600 focus:ring-1 focus:ring-offset-1">
-                              <span class="text-sm text-gray-600 mr-2 group-hover:text-blue-600">گزینه دوم</span>
+                              <span class="text-sm text-gray-600 ms-2 group-hover:text-blue-600">گزینه دوم</span>
                             </label>
                         </div>
                         <div class="mt-2">
                             <label class="inline-flex items-center group opacity-50">
                               <input type="radio" id="3" name="a" value="3" class="w-3.5 h-3.5 border border-gray-600 focus:ring-1 focus:ring-offset-1" disabled>
-                              <span class="text-sm text-gray-600 mr-2">گزینه سوم</span>
+                              <span class="text-sm text-gray-600 ms-2">گزینه سوم</span>
                             </label>
                         </div>
                         <div class="mt-2">
                             <label class="inline-flex items-center group">
                               <input type="radio" id="4" name="a" value="4" class="w-3.5 h-3.5 border border-gray-600 focus:ring-1 focus:ring-offset-1">
-                              <span class="text-sm text-gray-600 mr-2 group-hover:text-blue-600">گزینه چهارم</span>
+                              <span class="text-sm text-gray-600 ms-2 group-hover:text-blue-600">گزینه چهارم</span>
                             </label>
                         </div>
                     </div>
@@ -194,8 +198,6 @@
             </div>
         </div>
     </main>
-
-    <script src="vendors/alpine-2.8.2/alpine.js"></script>
 </body>
 
 </html>
